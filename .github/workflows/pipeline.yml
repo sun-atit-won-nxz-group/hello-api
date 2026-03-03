@@ -15,14 +15,8 @@ jobs:
         with:
           go-version: '1.21'
       - name: Check out code into the Go module directory
-      - uses: actions/checkout@v3
+        uses: actions/checkout@v3
       - name: Run Test
         run: make test
       - name: Coverage Check
         run: make coverage
-          
-      - name: golangci-lint
-        [cite_start]uses: golangci/golangci-lint-action@v3 # รัน Linter อัตโนมัติ [cite: 136]
-
-      - name: Run Unit Tests
-        [cite_start]run: go test -v -cover ./... # รัน Test พร้อมตรวจสอบ Code Coverage [cite: 566]
