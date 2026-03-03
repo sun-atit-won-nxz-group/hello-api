@@ -1,24 +1,22 @@
 linters:
   enable:
-    - gosec     # ตรวจสอบช่องโหว่ความปลอดภัย
+    - gosec      # ตรวจสอบช่องโหว่ความปลอดภัย
     - godot
     - misspell
     - stylecheck
 
-  linters-settings:
-    stylecheck:
-      # Select the Go version to target. The default is '1.13'.
-      go: "1.18"
-      checks: ["all","ST1*"]
+linters-settings:
+  stylecheck:
+    # ระบุเวอร์ชัน Go ที่โปรเจกต์ใช้
+    go: "1.18"
+    checks: ["all", "ST1*"]
 
-  issues:
-    exclude-use-default: false
+issues:
+  exclude-use-default: false
 
-  output: 
-    format: colored-line-number
-
-    # print lines of code with issue, default is true
-    print-issued-lines: false
-
-    # print linter name in the end of issue text, default is true
-    print-linter-name: true
+output:
+  format: colored-line-number
+  # print lines of code with issue, default is true
+  print-issued-lines: false
+  # print linter name in the end of issue text, default is true
+  print-linter-name: true
