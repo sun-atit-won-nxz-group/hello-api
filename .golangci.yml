@@ -1,14 +1,14 @@
 linters:
   enable:
-    - gosec      # ตรวจสอบช่องโหว่ความปลอดภัย
+    - gosec
     - godot
     - misspell
     - stylecheck
 
 linters-settings:
   stylecheck:
-    # ระบุเวอร์ชัน Go ที่โปรเจกต์ใช้
-    go: "1.18"
+    # ระบุเวอร์ชัน Go ที่ใช้
+    go: "1.25"
     checks: ["all", "ST1*"]
 
 issues:
