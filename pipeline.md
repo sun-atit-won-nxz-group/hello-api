@@ -45,3 +45,14 @@ jobs:
 
       - name: Coverage Check
         run: make coverage
+
+-------------------
+linters-settings:
+  stylecheck:
+    checks: ["all", "ST1*"]
+
+issues:
+  exclude-use-default: false
+
+  
+ 

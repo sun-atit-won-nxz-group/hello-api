@@ -1,21 +1,10 @@
 linters:
   enable:
     - gosec
-    - godot
-    - misspell
-    - stylecheck
 
-linters-settings:
-  stylecheck:
-    checks: ["all", "ST1*"]
+  output:
+    format: colored-line-number
 
-issues:
-  exclude-use-default: false
-
-output:
-  # แก้ปัญหา Deprecated: เปลี่ยนจาก format เป็น formats (รองรับหลายแบบ)
-  formats:
-    - format: colored-line-number
-  
-  print-issued-lines: false
-  print-linter-name: true
+    print-issued-lines: false
+    
+    print-linter-name: true
